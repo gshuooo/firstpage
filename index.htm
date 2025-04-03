@@ -16,15 +16,15 @@ xmlns="http://www.w3.org/TR/REC-html40">
   <o:Template>Normal</o:Template>
   <o:LastAuthor>Shuo Gong</o:LastAuthor>
   <o:Revision>2</o:Revision>
-  <o:TotalTime>12</o:TotalTime>
-  <o:Created>2025-04-03T12:25:00Z</o:Created>
-  <o:LastSaved>2025-04-03T12:25:00Z</o:LastSaved>
+  <o:TotalTime>16</o:TotalTime>
+  <o:Created>2025-04-03T12:32:00Z</o:Created>
+  <o:LastSaved>2025-04-03T12:32:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
-  <o:Words>1331</o:Words>
-  <o:Characters>7588</o:Characters>
-  <o:Lines>63</o:Lines>
-  <o:Paragraphs>17</o:Paragraphs>
-  <o:CharactersWithSpaces>8902</o:CharactersWithSpaces>
+  <o:Words>1368</o:Words>
+  <o:Characters>7803</o:Characters>
+  <o:Lines>65</o:Lines>
+  <o:Paragraphs>18</o:Paragraphs>
+  <o:CharactersWithSpaces>9153</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -2197,167 +2197,185 @@ punctuation'>
 
 <p class=MsoNormal align=center style='margin-bottom:7.8pt;mso-para-margin-bottom:
 .5gd;text-align:center'><b><span lang=EN-US style='font-size:14.0pt;mso-bidi-font-size:
-12.0pt;line-height:125%'>Facial Expression Recognition Algorithms Test Report<o:p></o:p></span></b></p>
+12.0pt;line-height:125%;mso-bidi-font-family:"Times New Roman"'>Facial
+Expression Recognition Algorithms Test Report<o:p></o:p></span></b></p>
 
-<p class=MsoNormal><b><span lang=EN-US>1. Introduction<o:p></o:p></span></b></p>
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>1.
+Introduction<o:p></o:p></span></b></p>
 
-<p class=MsoNormal><span lang=EN-US>This report evaluates the performance of
-various facial expression recognition algorithms. The evaluation focuses on the
-accuracy and robustness. The test dataset consists of 500 randomly selected
-images from the FER2013 dataset. Through comparative analysis, we assess the
-performance of each algorithm under different scenarios.</span></p>
+<p class=MsoNormal><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>This
+report evaluates the performance of various facial expression recognition
+algorithms. The evaluation focuses on the accuracy and robustness. The test
+dataset consists of 500 randomly selected images from the FER2013 dataset.
+Through comparative analysis, we assess the performance of each algorithm under
+different scenarios.<o:p></o:p></span></p>
 
-<p class=MsoNormal><b><span lang=EN-US>2. Test Dataset<o:p></o:p></span></b></p>
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>2.
+Test Dataset<o:p></o:p></span></b></p>
 
-<p class=MsoNormal><span lang=EN-US>The FER2013 dataset is widely used in
-facial expression recognition. This dataset includes 35,887 grayscale images of
-48x48 pixels. Each image was labeled with one of seven basic emotion categories
-(anger, disgust, fear, happiness, sadness, surprise, and neutral). The dataset
-is suitable for emotion assessment comparisons due to its diverse emotional
-labels and extensive image samples. We randomly selected 500 images from the
-FER2013 dataset as the test dataset. These images cover various emotion
-categories to ensure the comprehensive and representative test results. </span></p>
+<p class=MsoNormal><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>The
+FER2013 dataset is widely used in facial expression recognition. This dataset includes
+35,887 grayscale images of 48x48 pixels. Each image was labeled with one of
+seven basic emotion categories (anger, disgust, fear, happiness, sadness,
+surprise, and neutral). The dataset is suitable for emotion assessment
+comparisons due to its diverse emotional labels and extensive image samples. We
+randomly selected 500 images from the FER2013 dataset as the test dataset.
+These images cover various emotion categories to ensure the comprehensive and
+representative test results. <o:p></o:p></span></p>
 
-<p class=MsoNormal><b><span lang=EN-US>3. Test Algorithms <o:p></o:p></span></b></p>
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>3.
+Test Algorithms <o:p></o:p></span></b></p>
 
-<p class=MsoNormal><span lang=EN-US>Recognizing emotions from facial
-expressions involves two steps: face recognition and emotion detection. Our
-test introduced 5 face recognition algorithms (OpenCV, <span class=SpellE>RetinaFace</span>,
-<span class=SpellE>Dlib</span>, Yolov8 and Yunet) and 2 emotion detection
-algorithms (<span class=SpellE>DeepFace</span> and Facial Expression
-Recognition).<b><o:p></o:p></b></span></p>
+<p class=MsoNormal><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Recognizing
+emotions from facial expressions involves two steps: face recognition and
+emotion detection. Our test introduced 5 face recognition algorithms (OpenCV, <span
+class=SpellE>RetinaFace</span>, <span class=SpellE>Dlib</span>, Yolov8 and
+Yunet) and 2 emotion detection algorithms (<span class=SpellE>DeepFace</span>
+and Facial Expression Recognition).<b><o:p></o:p></b></span></p>
 
-<p class=MsoNormal><b><span lang=EN-US>OpenCV</span></b><span lang=EN-US> is an
-open-source computer vision library that is widely used for image processing
-and computer vision tasks. It provides various algorithms for face detection
-and emotion analysis.</span></p>
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>OpenCV</span></b><span
+lang=EN-US style='mso-bidi-font-family:"Times New Roman"'> is an open-source
+computer vision library that is widely used for image processing and computer
+vision tasks. It provides various algorithms for face detection and emotion
+analysis.<o:p></o:p></span></p>
 
-<p class=MsoNormal><span class=SpellE><b><span lang=EN-US>RetinaFace</span></b></span><b><span
-lang=EN-US> </span></b><span lang=EN-US>is a high-performance face detection
-algorithm capable of precise face localization and <span class=SpellE>keypoint</span>
-extraction. It performs well in complex scenarios but requires high-performance
-hardware.</span></p>
+<p class=MsoNormal><span class=SpellE><b><span lang=EN-US style='mso-bidi-font-family:
+"Times New Roman"'>RetinaFace</span></b></span><b><span lang=EN-US
+style='mso-bidi-font-family:"Times New Roman"'> </span></b><span lang=EN-US
+style='mso-bidi-font-family:"Times New Roman"'>is a high-performance face
+detection algorithm capable of precise face localization and <span
+class=SpellE>keypoint</span> extraction. It performs well in complex scenarios
+but requires high-performance hardware.<o:p></o:p></span></p>
 
-<p class=MsoNormal><span class=SpellE><b><span lang=EN-US>Dlib</span></b></span><span
-lang=EN-US> is an open-source machine learning library that provides various algorithms
-of face detection and feature points localization. Its 68-point feature
-prediction model performs well in face recognition tasks.</span></p>
+<p class=MsoNormal><span class=SpellE><b><span lang=EN-US style='mso-bidi-font-family:
+"Times New Roman"'>Dlib</span></b></span><span lang=EN-US style='mso-bidi-font-family:
+"Times New Roman"'> is an open-source machine learning library that provides
+various algorithms of face detection and feature points localization. Its
+68-point feature prediction model performs well in face recognition tasks.<o:p></o:p></span></p>
 
-<p class=MsoNormal><b><span lang=EN-US>Yolov8</span></b><span lang=EN-US> is
-the latest version of the YOLO (You Only Look Once) series and is widely used in
-object detection tasks. It performs well in face detection and emotion
-recognition. While, this algorithm requires the support of high-performance
-GPU.</span></p>
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Yolov8</span></b><span
+lang=EN-US style='mso-bidi-font-family:"Times New Roman"'> is the latest
+version of the YOLO (You Only Look Once) series and is widely used in object
+detection tasks. It performs well in face detection and emotion recognition. While,
+this algorithm requires the support of high-performance GPU.<o:p></o:p></span></p>
 
-<p class=MsoNormal><b><span lang=EN-US>Yunet</span></b><span lang=EN-US> is a
-lightweight face detection algorithm for mobile and embedded systems. It
-performs well on low-performance devices and supports multi-platform
-deployment.</span></p>
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Yunet</span></b><span
+lang=EN-US style='mso-bidi-font-family:"Times New Roman"'> is a lightweight
+face detection algorithm for mobile and embedded systems. It performs well on
+low-performance devices and supports multi-platform deployment.<o:p></o:p></span></p>
 
-<p class=MsoNormal><span class=SpellE><b><span lang=EN-US>DeepFace</span></b></span><span
-lang=EN-US> is a deep learning-based library for facial recognition and emotion
-analysis. It supports multiple models, such as VGG-Face and <span class=SpellE>Facenet</span>,
-and provides high-precision results of facial feature extraction and emotion
-recognition. </span></p>
+<p class=MsoNormal><span class=SpellE><b><span lang=EN-US style='mso-bidi-font-family:
+"Times New Roman"'>DeepFace</span></b></span><span lang=EN-US style='mso-bidi-font-family:
+"Times New Roman"'> is a deep learning-based library for facial recognition and
+emotion analysis. It supports multiple models, such as VGG-Face and <span
+class=SpellE>Facenet</span>, and provides high-precision results of facial
+feature extraction and emotion recognition. <o:p></o:p></span></p>
 
-<p class=MsoNormal><b><span lang=EN-US>Facial Expression Recognition (FER)</span></b><span
-lang=EN-US> is a deep learning model specifically designed for facial
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Facial
+Expression Recognition (FER)</span></b><span lang=EN-US style='mso-bidi-font-family:
+"Times New Roman"'> is a deep learning model specifically designed for facial
 expression recognition. It can identify multiple emotion categories, and is well-suited
-for the emotion analysis tasks.</span></p>
+for the emotion analysis tasks.<o:p></o:p></span></p>
 
-<p class=MsoNormal><b><span lang=EN-US>Face++</span></b><span lang=EN-US> is an
-API of facial recognition and emotion detection. It offers the function of face
-detection, <span class=SpellE>keypoint</span> localization, and emotion
-analysis. It operates via cloud-based API calls, requiring minimal hardware
-resources. Face++ has the capability of both face recognition and emotion
-detection.</span></p>
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Face++</span></b><span
+lang=EN-US style='mso-bidi-font-family:"Times New Roman"'> is an API of facial
+recognition and emotion detection. It offers the function of face detection, <span
+class=SpellE>keypoint</span> localization, and emotion analysis. It operates
+via cloud-based API calls, requiring minimal hardware resources. Face++ has the
+capability of both face recognition and emotion detection.<o:p></o:p></span></p>
 
-<p class=MsoNormal><b><span lang=EN-US>4. Accuracy Test<o:p></o:p></span></b></p>
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>4.
+Accuracy Test<o:p></o:p></span></b></p>
 
-<p class=MsoNormal><span lang=EN-US>We conducted the accuracy test by using
-three indicators: emotion recognition accuracy, hardware requirement and runtime.
-The test results are detailed in Table 1.</span></p>
+<p class=MsoNormal><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>We
+conducted the accuracy test by using three indicators: emotion recognition accuracy,
+hardware requirement and runtime. The test results are detailed in Table 1.<o:p></o:p></span></p>
 
-<p class=MsoNormal><b><span lang=EN-US>4.1 Emotion Recognition Accuracy<o:p></o:p></span></b></p>
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>4.1
+Emotion Recognition Accuracy<o:p></o:p></span></b></p>
 
 <ul style='margin-top:0cm' type=disc>
  <li class=MsoNormal style='mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><b><span
-     lang=EN-US>Face++</span></b><span lang=EN-US>: 78.90% (best performance)</span></li>
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Face++</span></b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>: 78.90% (best
+     performance)<o:p></o:p></span></li>
  <li class=MsoNormal style='mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><b><span
-     lang=EN-US>FER</span></b><span lang=EN-US>: 72.26%-76.84%</span></li>
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>FER</span></b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>: 72.26%-76.84%<o:p></o:p></span></li>
  <li class=MsoNormal style='mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><span
-     class=SpellE><b><span lang=EN-US>DeepFace</span></b></span><span
-     lang=EN-US>: 64.89%-67.09%</span></li>
+     class=SpellE><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>DeepFace</span></b></span><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>: 64.89%-67.09%<o:p></o:p></span></li>
 </ul>
 
-<p class=MsoNormal><b><span lang=EN-US>4.2 Hardware Requirements<o:p></o:p></span></b></p>
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>4.2
+Hardware Requirements<o:p></o:p></span></b></p>
 
 <ul style='margin-top:0cm' type=disc>
  <li class=MsoNormal style='mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><b><span
-     lang=EN-US>Face++: </span></b><span lang=EN-US>Cloud-based API calls, no
-     strict hardware requirements, and low running costs.</span></li>
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Face++: </span></b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Cloud-based API
+     calls, no strict hardware requirements, and low running costs.<o:p></o:p></span></li>
  <li class=MsoNormal style='mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><b><span
-     lang=EN-US>OpenCV: </span></b><span lang=EN-US>Suitable for
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>OpenCV: </span></b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Suitable for
      low-performance CPUs or edge devices (e.g., Raspberry Pi 4B with ARM
-     Cortex-A72). Requires </span><span style='font-family:等线;mso-ascii-font-family:
-     "Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
-     "Times New Roman"'>≥</span><span lang=EN-US> 2GB RAM, no GPU, and supports
-     30 FPS at 640 x 480 resolution.</span></li>
+     Cortex-A72). Requires greater than or equal to 2GB RAM, no GPU, and
+     supports 30 FPS at 640 x 480 resolution.<o:p></o:p></span></li>
  <li class=MsoNormal style='mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><span
-     class=SpellE><b><span lang=EN-US>Dlib</span></b></span><b><span
-     lang=EN-US>: </span></b><span lang=EN-US>Suitable for low-performance CPUs
-     or edge devices (e.g., Raspberry Pi 3B+ with a single-core CPU). Requires </span><span
-     style='font-family:等线;mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
-     minor-fareast;mso-hansi-font-family:"Times New Roman"'>≥</span><span
-     lang=EN-US> 1GB RAM and 500 MB of storage for the 68-point feature
-     prediction model.</span></li>
+     class=SpellE><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Dlib</span></b></span><b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>: </span></b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Suitable for
+     low-performance CPUs or edge devices (e.g., Raspberry Pi 3B+ with a
+     single-core CPU). Requires greater than or equal to 1GB RAM and 500 MB of
+     storage for the 68-point feature prediction model.<o:p></o:p></span></li>
  <li class=MsoNormal style='mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><b><span
-     lang=EN-US>Yunet: </span></b><span lang=EN-US>Suitable for medium-performance
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Yunet: </span></b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Suitable for medium-performance
      GPU or CPU hybrid model (training: optional GPU (RTX 2060+) or CPU
-     multi-core (i7-12700H); inference: CPU single-threaded speed 65 FPS)</span></li>
+     multi-core (i7-12700H); inference: CPU single-threaded speed 65 FPS)<o:p></o:p></span></li>
  <li class=MsoNormal style='mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><span
-     class=SpellE><b><span lang=EN-US>RetinaFace</span></b></span><b><span
-     lang=EN-US>:</span></b><span lang=EN-US> Suitable for high-performance GPU
-     (e.g., NVIDIA RTX 3080/4090 with </span><span style='font-family:等线;
-     mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
-     mso-hansi-font-family:"Times New Roman"'>≥</span><span lang=EN-US>12GB
-     video memory for training).</span></li>
+     class=SpellE><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>RetinaFace</span></b></span><b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>:</span></b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'> Suitable for
+     high-performance GPU (e.g., NVIDIA RTX 3080/4090 with greater than or
+     equal to12GB video memory for training).<o:p></o:p></span></li>
  <li class=MsoNormal style='mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><b><span
-     lang=EN-US>Yolov8:</span></b><span lang=EN-US> Suitable for higher
-     performance HPC GPU (training: requires RTX 3060+ GPU with </span><span
-     style='font-family:等线;mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
-     minor-fareast;mso-hansi-font-family:"Times New Roman"'>≥</span><span
-     lang=EN-US> 8GB of video memory (YOLOv8x version))</span></li>
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Yolov8:</span></b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'> Suitable for
+     higher performance HPC GPU (training: requires RTX 3060+ GPU with greater
+     than or equal to 8GB of video memory (YOLOv8x version))<o:p></o:p></span></li>
 </ul>
 
-<p class=MsoNormal><b><span lang=EN-US>4.3 Runtime<o:p></o:p></span></b></p>
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>4.3
+Runtime<o:p></o:p></span></b></p>
 
-<p class=MsoNormal><span lang=EN-US>The runtime for this test is the time
-required to process 500 images on a CPU (13th Gen Intel Core i9-13900HX)
-without GPU acceleration.<b><o:p></o:p></b></span></p>
+<p class=MsoNormal><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>The
+runtime for this test is the time required to process 500 images on a CPU (13th
+Gen Intel Core i9-13900HX) without GPU acceleration.<b><o:p></o:p></b></span></p>
 
 <ul style='margin-top:0cm' type=disc>
  <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list 36.0pt'><b><span
-     lang=EN-US>Face++</span></b><span lang=EN-US>: 5.18 seconds (best
-     performance)</span></li>
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Face++</span></b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>: 5.18 seconds (best
+     performance)<o:p></o:p></span></li>
  <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list 36.0pt'><b><span
-     lang=EN-US>Other Algorithms</span></b><span lang=EN-US>: Runtime ranges
-     from 15.88 seconds to 1233 seconds.</span></li>
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Other Algorithms</span></b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>: Runtime ranges
+     from 15.88 seconds to 1233 seconds.<o:p></o:p></span></li>
 </ul>
 
 </div>
 
 <span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:11.0pt;line-height:
 125%;font-family:"Times New Roman",serif;mso-fareast-font-family:等线;mso-fareast-theme-font:
-minor-fareast;mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;
-mso-fareast-language:ZH-CN;mso-bidi-language:AR-SA'><br clear=all
-style='page-break-before:always;mso-break-type:section-break'>
+minor-fareast;mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;mso-bidi-language:
+AR-SA'><br clear=all style='page-break-before:always;mso-break-type:section-break'>
 </span>
 
 <div class=WordSection2 style='layout-grid:16.3pt'>
 
-<p class=MsoNormal style='line-height:normal'><span lang=EN-US>Table 1 The results
-of accuracy test</span></p>
+<p class=MsoNormal style='line-height:normal'><span lang=EN-US
+style='mso-bidi-font-family:"Times New Roman"'>Table 1 The results of accuracy test<o:p></o:p></span></p>
 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
@@ -2426,9 +2444,10 @@ of accuracy test</span></p>
   edge device model </span></b></span><span style='mso-bookmark:_Hlk193660649'><span
   lang=EN-US style='font-size:8.0pt;mso-bidi-font-family:"Times New Roman";
   color:black;mso-font-kerning:0pt;mso-ligatures:none'>(CPU-only operation with
-  Raspberry Pi 4B (ARM Cortex-A72) support; ≥ 2GB RAM, no GPU requirements, 30
-  FPS (640 x 480 resolution))</span></span><span style='mso-bookmark:_Hlk193660649'><span
-  lang=EN-US style='font-size:8.0pt;mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></span></p>
+  Raspberry Pi 4B (ARM Cortex-A72) support; greater than or equal to 2GB RAM,
+  no GPU requirements, 30 FPS (640 x 480 resolution))</span></span><span
+  style='mso-bookmark:_Hlk193660649'><span lang=EN-US style='font-size:8.0pt;
+  mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></span></p>
   </td>
   <span style='mso-bookmark:_Hlk193660649'></span>
   <td width=80 style='width:59.75pt;border-top:none;border-left:none;
@@ -2475,9 +2494,9 @@ of accuracy test</span></p>
   higher-performance HPC GPU </span></b></span><span style='mso-bookmark:_Hlk193660649'><span
   lang=EN-US style='font-size:8.0pt;mso-bidi-font-family:"Times New Roman";
   color:black;mso-font-kerning:0pt;mso-ligatures:none'>(training: requires
-  NVIDIA RTX 3080/4090 class GPU with ≥12GB of video memory)</span></span><span
-  style='mso-bookmark:_Hlk193660649'><span lang=EN-US style='font-size:8.0pt;
-  mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></span></p>
+  NVIDIA RTX 3080/4090 class GPU with greater than or equal to12GB of video
+  memory)</span></span><span style='mso-bookmark:_Hlk193660649'><span
+  lang=EN-US style='font-size:8.0pt;mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></span></p>
   </td>
   <span style='mso-bookmark:_Hlk193660649'></span>
   <td width=80 style='width:59.75pt;border-top:none;border-left:none;
@@ -2524,9 +2543,9 @@ of accuracy test</span></p>
   class=SpellE>CPUor</span> edge device model </span></b></span><span
   style='mso-bookmark:_Hlk193660649'><span lang=EN-US style='font-size:8.0pt;
   mso-bidi-font-family:"Times New Roman";color:black;mso-font-kerning:0pt;
-  mso-ligatures:none'>(single-core CPU (e.g., Raspberry Pi 3B+) with ≥ 1 GB of
-  RAM; relies on 68-point feature prediction model (requires 500 MB of
-  storage))</span></span><span style='mso-bookmark:_Hlk193660649'><span
+  mso-ligatures:none'>(single-core CPU (e.g., Raspberry Pi 3B+) with greater
+  than or equal to1 GB of RAM; relies on 68-point feature prediction model
+  (requires 500 MB of storage))</span></span><span style='mso-bookmark:_Hlk193660649'><span
   lang=EN-US style='font-size:8.0pt;mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></span></p>
   </td>
   <span style='mso-bookmark:_Hlk193660649'></span>
@@ -2578,9 +2597,10 @@ of accuracy test</span></p>
   style='mso-bookmark:_Hlk193660649'><span style='mso-bookmark:_Hlk193657844'><span
   lang=EN-US style='font-size:8.0pt;mso-bidi-font-family:"Times New Roman";
   color:black;mso-font-kerning:0pt;mso-ligatures:none'>(training: requires RTX
-  3060+ GPU with ≥ 8GB of video memory (YOLOv8x version))</span></span></span><span
-  style='mso-bookmark:_Hlk193660649'><span style='mso-bookmark:_Hlk193657844'><span
-  lang=EN-US style='font-size:8.0pt;mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></span></span></p>
+  3060+ GPU with greater than or equal to 8GB of video memory (YOLOv8x
+  version))</span></span></span><span style='mso-bookmark:_Hlk193660649'><span
+  style='mso-bookmark:_Hlk193657844'><span lang=EN-US style='font-size:8.0pt;
+  mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></span></span></p>
   </td>
   <span style='mso-bookmark:_Hlk193660649'><span style='mso-bookmark:_Hlk193657844'></span></span>
   <td width=80 style='width:59.75pt;border-top:none;border-left:none;
@@ -2681,9 +2701,10 @@ of accuracy test</span></p>
   edge device model </span></b></span><span style='mso-bookmark:_Hlk193660649'><span
   lang=EN-US style='font-size:8.0pt;mso-bidi-font-family:"Times New Roman";
   color:black;mso-font-kerning:0pt;mso-ligatures:none'>(CPU-only operation with
-  Raspberry Pi 4B (ARM Cortex-A72) support; ≥ 2GB RAM, no GPU requirements, 30
-  FPS (640 x 480 resolution))</span></span><span style='mso-bookmark:_Hlk193660649'><span
-  lang=EN-US style='font-size:8.0pt;mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></span></p>
+  Raspberry Pi 4B (ARM Cortex-A72) support; greater than or equal to 2GB RAM,
+  no GPU requirements, 30 FPS (640 x 480 resolution))</span></span><span
+  style='mso-bookmark:_Hlk193660649'><span lang=EN-US style='font-size:8.0pt;
+  mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></span></p>
   </td>
   <span style='mso-bookmark:_Hlk193660649'></span>
   <td width=80 style='width:59.75pt;border-top:none;border-left:none;
@@ -2729,9 +2750,9 @@ of accuracy test</span></p>
   higher-performance HPC GPU </span></b></span><span style='mso-bookmark:_Hlk193660649'><span
   lang=EN-US style='font-size:8.0pt;mso-bidi-font-family:"Times New Roman";
   color:black;mso-font-kerning:0pt;mso-ligatures:none'>(training: requires
-  NVIDIA RTX 3080/4090 class GPU with ≥12GB of video memory)</span></span><span
-  style='mso-bookmark:_Hlk193660649'><span lang=EN-US style='font-size:8.0pt;
-  mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></span></p>
+  NVIDIA RTX 3080/4090 class GPU with greater than or equal to 12GB of video
+  memory)</span></span><span style='mso-bookmark:_Hlk193660649'><span
+  lang=EN-US style='font-size:8.0pt;mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></span></p>
   </td>
   <span style='mso-bookmark:_Hlk193660649'></span>
   <td width=80 style='width:59.75pt;border-top:none;border-left:none;
@@ -2777,9 +2798,9 @@ of accuracy test</span></p>
   class=SpellE>CPUor</span> edge device model </span></b></span><span
   style='mso-bookmark:_Hlk193660649'><span lang=EN-US style='font-size:8.0pt;
   mso-bidi-font-family:"Times New Roman";color:black;mso-font-kerning:0pt;
-  mso-ligatures:none'>(single-core CPU (e.g., Raspberry Pi 3B+) with ≥ 1 GB of
-  RAM; relies on 68-point feature prediction model (requires 500 MB of
-  storage))</span></span><span style='mso-bookmark:_Hlk193660649'><span
+  mso-ligatures:none'>(single-core CPU (e.g., Raspberry Pi 3B+) with greater
+  than or equal to 1 GB of RAM; relies on 68-point feature prediction model
+  (requires 500 MB of storage))</span></span><span style='mso-bookmark:_Hlk193660649'><span
   lang=EN-US style='font-size:8.0pt;mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></span></p>
   </td>
   <span style='mso-bookmark:_Hlk193660649'></span>
@@ -2824,9 +2845,15 @@ of accuracy test</span></p>
   performance HPC GPU </span></b></span><span style='mso-bookmark:_Hlk193660649'><span
   lang=EN-US style='font-size:8.0pt;mso-bidi-font-family:"Times New Roman";
   color:black;mso-font-kerning:0pt;mso-ligatures:none'>(training: requires RTX
-  3060+ GPU with ≥ 8GB of video memory (YOLOv8x version))</span></span><span
-  style='mso-bookmark:_Hlk193660649'><span lang=EN-US style='font-size:8.0pt;
-  mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></span></p>
+  3060+ GPU with </span></span><span style='mso-bookmark:_Hlk193660649'><span
+  style='font-size:8.0pt;font-family:等线;mso-ascii-font-family:"Times New Roman";
+  mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:"Times New Roman";
+  mso-bidi-font-family:"Times New Roman";color:black;mso-font-kerning:0pt;
+  mso-ligatures:none'>≥</span></span><span style='mso-bookmark:_Hlk193660649'><span
+  lang=EN-US style='font-size:8.0pt;mso-bidi-font-family:"Times New Roman";
+  color:black;mso-font-kerning:0pt;mso-ligatures:none'>8GB of video memory
+  (YOLOv8x version))</span></span><span style='mso-bookmark:_Hlk193660649'><span
+  lang=EN-US style='font-size:8.0pt;mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></span></p>
   </td>
   <span style='mso-bookmark:_Hlk193660649'></span>
   <td width=80 style='width:59.75pt;border-top:none;border-left:none;
@@ -2934,60 +2961,70 @@ of accuracy test</span></p>
 
 <span style='mso-bookmark:_Hlk193660649'></span>
 
-<p class=MsoNormal style='line-height:normal'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+<p class=MsoNormal style='line-height:normal'><span lang=EN-US
+style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal style='line-height:normal'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+<p class=MsoNormal style='line-height:normal'><span lang=EN-US
+style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
 </div>
 
 <span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:11.0pt;line-height:
 125%;font-family:"Times New Roman",serif;mso-fareast-font-family:等线;mso-fareast-theme-font:
-minor-fareast;mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US;
-mso-fareast-language:ZH-CN;mso-bidi-language:AR-SA'><br clear=all
-style='page-break-before:always;mso-break-type:section-break'>
+minor-fareast;mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;mso-bidi-language:
+AR-SA'><br clear=all style='page-break-before:always;mso-break-type:section-break'>
 </span>
 
 <div class=WordSection3 style='layout-grid:15.6pt'>
 
-<p class=MsoNormal><b><span lang=EN-US>5. Robustness Test<o:p></o:p></span></b></p>
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>5.
+Robustness Test<o:p></o:p></span></b></p>
 
-<p class=MsoNormal><span lang=EN-US>We conducted the accuracy test by using two
-indicators: noise recognition and low-resolution emotion recognition. The test
-results are detailed in Table 2.</span></p>
+<p class=MsoNormal><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>We
+conducted the accuracy test by using two indicators: noise recognition and low-resolution
+emotion recognition. The test results are detailed in Table 2.<o:p></o:p></span></p>
 
-<p class=MsoNormal><b><span lang=EN-US>5.1 Noise Recognition<o:p></o:p></span></b></p>
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>5.1
+Noise Recognition<o:p></o:p></span></b></p>
 
-<p class=MsoNormal><span lang=EN-US>The noise recognition test evaluated each
-algorithm's ability to correctly identify noise in the dataset. 300 noise
-images (including backs, blanks, very small faces, and non-faces) were added to
-the test dataset.<b><o:p></o:p></b></span></p>
+<p class=MsoNormal><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>The
+noise recognition test evaluated each algorithm's ability to correctly identify
+noise in the dataset. 300 noise images (including backs, blanks, very small
+faces, and non-faces) were added to the test dataset.<b><o:p></o:p></b></span></p>
 
 <ul style='margin-top:0cm' type=disc>
  <li class=MsoNormal style='mso-list:l3 level1 lfo4;tab-stops:list 36.0pt'><span
-     class=SpellE><b><span lang=EN-US>RetinaFace</span></b></span><b><span
-     lang=EN-US> and Yolov8</span></b><span lang=EN-US>: Correctly identified
-     298 noise samples (top performers)</span></li>
+     class=SpellE><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>RetinaFace</span></b></span><b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'> and Yolov8</span></b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>: Correctly
+     identified 298 noise samples (top performers)<o:p></o:p></span></li>
  <li class=MsoNormal style='mso-list:l3 level1 lfo4;tab-stops:list 36.0pt'><b><span
-     lang=EN-US>Face++</span></b><span lang=EN-US>: Correctly identified 296
-     noise samples.</span></li>
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Face++</span></b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>: Correctly
+     identified 296 noise samples.<o:p></o:p></span></li>
 </ul>
 
-<p class=MsoNormal><b><span lang=EN-US>5.2 Low-Resolution Emotion Recognition<o:p></o:p></span></b></p>
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>5.2
+Low-Resolution Emotion Recognition<o:p></o:p></span></b></p>
 
-<p class=MsoNormal><span lang=EN-US>We reduced the resolution of the images in
-the test dataset by 50% to examine the accuracy of each algorithm's emotion
-recognition.<b><o:p></o:p></b></span></p>
+<p class=MsoNormal><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>We
+reduced the resolution of the images in the test dataset by 50% to examine the
+accuracy of each algorithm's emotion recognition.<b><o:p></o:p></b></span></p>
 
 <ul style='margin-top:0cm' type=disc>
  <li class=MsoNormal style='mso-list:l1 level1 lfo5;tab-stops:list 36.0pt'><span
-     class=SpellE><b><span lang=EN-US>RetinaFace</span></b></span><b><span
-     lang=EN-US> + FER</span></b><span lang=EN-US>: 72.73% accuracy (best
-     performance)</span></li>
+     class=SpellE><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>RetinaFace</span></b></span><b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'> + FER</span></b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>: 72.73%
+     accuracy (best performance)<o:p></o:p></span></li>
  <li class=MsoNormal style='mso-list:l1 level1 lfo5;tab-stops:list 36.0pt'><b><span
-     lang=EN-US>Face++</span></b><span lang=EN-US>: 72.53% accuracy.</span></li>
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Face++</span></b><span
+     lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>: 72.53%
+     accuracy.<o:p></o:p></span></li>
 </ul>
 
-<p class=MsoNormal><span lang=EN-US>Table 2 The results of robustness test</span></p>
+<p class=MsoNormal><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Table
+2 The results of robustness test<o:p></o:p></span></p>
 
 <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=558
  style='width:418.15pt;border-collapse:collapse;border:none;mso-border-alt:
@@ -3309,17 +3346,20 @@ recognition.<b><o:p></o:p></b></span></p>
  </tr>
 </table>
 
-<p class=MsoNormal><b><span lang=EN-US>6. Integration Test<o:p></o:p></span></b></p>
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>6.
+Integration Test<o:p></o:p></span></b></p>
 
-<p class=MsoNormal><b><span lang=EN-US>6.1 Integration Test Results<o:p></o:p></span></b></p>
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>6.1
+Integration Test Results<o:p></o:p></span></b></p>
 
-<p class=MsoNormal><span lang=EN-US>Face++ was integrated with other algorithms
-by averaging the emotion detection scores to produce the integrated emotion
-score. The test results are detailed in Table 3. All integration accuracies
-were lower than Face++'s standalone accuracy (78.9%). The integration is no
-better than using Face++ on its own.</span></p>
+<p class=MsoNormal><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Face++
+was integrated with other algorithms by averaging the emotion detection scores
+to produce the integrated emotion score. The test results are detailed in Table
+3. All integration accuracies were lower than Face++'s standalone accuracy (78.9%).
+The integration is no better than using Face++ on its own.<o:p></o:p></span></p>
 
-<p class=MsoNormal><span lang=EN-US>Table 3 The results of integration test</span></p>
+<p class=MsoNormal><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Table
+3 The results of integration test<o:p></o:p></span></p>
 
 <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
@@ -3624,17 +3664,18 @@ better than using Face++ on its own.</span></p>
  </tr>
 </table>
 
-<p class=MsoNormal><b><span lang=EN-US>7. Conclusion<o:p></o:p></span></b></p>
+<p class=MsoNormal><b><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>7.
+Conclusion<o:p></o:p></span></b></p>
 
-<p class=MsoNormal><span lang=EN-US>Based on the comprehensive evaluation,
-Face++ demonstrates good performance in accuracy, efficiency, and robustness,
-making it a cost-effective choice for our research. Although alternative
-algorithms like <span class=SpellE>RetinaFace</span> and FER show competitive
-performance in specific indicators, Face++ offers a balanced solution across
-all evaluated criteria. In addition, Face++ is better on its own than in
-combination with other algorithms. </span></p>
+<p class=MsoNormal><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'>Based
+on the comprehensive evaluation, Face++ demonstrates good performance in
+accuracy, efficiency, and robustness, making it a cost-effective choice for our
+research. Although alternative algorithms like <span class=SpellE>RetinaFace</span>
+and FER show competitive performance in specific indicators, Face++ offers a
+balanced solution across all evaluated criteria. In addition, Face++ is better
+on its own than in combination with other algorithms. <o:p></o:p></span></p>
 
-<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+<p class=MsoNormal><span lang=EN-US style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
 </div>
 
